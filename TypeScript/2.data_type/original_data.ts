@@ -1,6 +1,9 @@
-// JavaScript 的类型分为两种：原始数据类型（Primitive data types）和对象类型（Object types）。
-// 原始数据类型包括：布尔值、数值、字符串、null、undefined 以及 ES6 中的新类型 Symbol 和 ES10 中的新类型 BigInt。
-// 本节主要介绍前五种原始数据类型在 TypeScript 中的应用。
+/**
+ * 
+ * JavaScript 的类型分为两种：原始数据类型（Primitive data types）和对象类型（Object types）。
+ * 原始数据类型包括：布尔值、数值、字符串、null、undefined 以及 ES6 中的新类型 Symbol 和 ES10 中的新类型 BigInt。
+ * 本节主要介绍前五种原始数据类型在 TypeScript 中的应用。
+ */
 
 
 //----------------boolean----------------

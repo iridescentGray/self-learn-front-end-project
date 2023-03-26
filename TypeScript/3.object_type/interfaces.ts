@@ -1,15 +1,21 @@
-//接口（Interfaces）是对行为的抽象.TypeScript 中的接口是一个非常灵活的概念
-//除了可用于对类的一部分行为进行抽象以外，也常用于对「对象的形状（Shape）」进行描述。
+/**
+ * 接口（Interfaces）是对行为的抽象.TypeScript 中的接口是一个非常灵活的概念
+ * 除了可用于对类的一部分行为进行抽象以外，也常用于对「对象的形状（Shape）」进行描述。
+ */
 
 interface Person {
     name: string;
     age: number;
 }
 
+//注意interface不是对象，不能实例化
+let interfaceObj = Person();
+
 let tom: Person = {
     name: 'Tom',
     age: 25
 };
+
 
 //定义的变量比接口多/少了一些属性是不允许的，必须一模一样
 let XiaoMing: Person = {
@@ -63,3 +69,11 @@ let XaoZi: ReadonlyPerson = {
 };
 
 XaoZi.id = 9527;
+
+//----------------------接口继承--------------------------------
+interface Animal {
+    name: string;
+}
+interface Cat extends Animal {
+    run(): void;
+}

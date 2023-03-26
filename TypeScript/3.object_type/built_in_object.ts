@@ -12,7 +12,7 @@ let r: RegExp = /[a-z]/;
 //Document、HTMLElement、Event、NodeList 等
 let body: HTMLElement = document.body;
 let allDiv: NodeList = document.querySelectorAll('div');
-document.addEventListener('click', function(e: MouseEvent) {
+document.addEventListener('click', function (e: MouseEvent) {
 });
 
 //----------------------TypeScript 核心库----------------------
